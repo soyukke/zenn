@@ -3,7 +3,7 @@ title: "Claude Codeが実行する危険なコマンドをブロックするccgu
 emoji: "🛡"
 type: "tech"
 topics: ["claudecode", "zig", "security", "cli"]
-published: false
+published: true
 ---
 
 ## はじめに
