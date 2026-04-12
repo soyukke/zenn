@@ -228,7 +228,7 @@ LSPのCodeLensから`@IsTest`メソッドを直接実行することもできま
 
 | | sf apex run test | apexgov interpret test |
 |---|---|---|
-| 実行時間 | **15.2秒** | **0.015秒** |
+| 実行時間 | **4〜15秒**（ネットワーク依存） | **0.015秒** |
 | 結果 | 8/8 Pass | 8/8 Pass |
 
 ![sf cli vs apexgov テスト実行比較](/images/apexgov-test-bench.gif)
