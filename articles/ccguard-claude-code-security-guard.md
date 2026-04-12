@@ -266,15 +266,20 @@ try expectAllow("grep 'rm -rf' logfile.txt");
 
 ## インストール
 
-[GitHub Releases](https://github.com/soyukke/ccguard/releases) からバイナリをダウンロードできます。
+### Plugin Marketplace からインストール（推奨）
 
-```bash
-# 例: macOS (Apple Silicon)
-curl -L https://github.com/soyukke/ccguard/releases/latest/download/ccguard-aarch64-macos.tar.gz | tar xz
-mv ccguard ~/.local/bin/
+Claude Code 内で以下を実行するだけです。
+
+```
+/plugin marketplace add soyukke/ccguard
+/plugin install ccguard@ccguard
 ```
 
-ソースからビルドする場合（Zig 0.15.2+ が必要）:
+バイナリはセッション開始時に自動でダウンロードされます。ビルドツールも `settings.json` の手動編集も不要です。
+
+### ソースからビルドする場合
+
+Zig 0.15.2+ が必要です。
 
 ```bash
 git clone https://github.com/soyukke/ccguard.git
@@ -282,6 +287,8 @@ cd ccguard
 zig build -Doptimize=ReleaseFast
 cp zig-out/bin/ccguard ~/.local/bin/
 ```
+
+ソースビルドの場合は `~/.claude/settings.json` に hooks の設定を手動で追加してください（記事冒頭の「仕組み」セクション参照）。
 
 ## おわりに
 
