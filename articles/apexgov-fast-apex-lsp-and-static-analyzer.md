@@ -10,7 +10,7 @@ Salesforce Apex向けのLanguage Server（LSP）、静的解析、テスト実�
 
 https://github.com/soyukke/apexgov
 
-Neovimにも対応しています。
+Neovimでは、プリビルドのバイナリをそのまま使えます。VS Codeでは、汎用のLSPクライアント拡張から使います。手順は[セットアップガイド](https://github.com/soyukke/apexgov/blob/main/docs/lsp-setup.md)にまとめています。
 
 まだ不十分なところは多々あります。
 
