@@ -10,8 +10,6 @@ Salesforce Apex向けのLanguage Server（LSP）、静的解析、テスト実�
 
 https://github.com/soyukke/apexgov
 
-https://marketplace.visualstudio.com/items?itemName=soyukke.apexgov
-
 Neovimにも対応しています。
 
 まだ不十分なところは多々あります。
